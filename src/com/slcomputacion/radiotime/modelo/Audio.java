@@ -12,6 +12,7 @@ public class Audio {
 
     public void reproduce(){
         this.totalReproducciones++;
+
     }
 
     public String getTitulo() {
