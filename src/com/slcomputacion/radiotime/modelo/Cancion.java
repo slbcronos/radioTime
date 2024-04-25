@@ -7,7 +7,7 @@ public class Cancion extends Audio{
 
     @Override
     public int getClasificacion() {
-        if (getTotalDeMeGusta() > 5000){
+        if (getTotalDeMeGusta() >= 5000){
             return 8;
         }else {
             return 4;

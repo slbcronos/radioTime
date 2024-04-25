@@ -15,7 +15,7 @@ public class Prinicpal {
         miPodcast.setTitulo("Las mejores rolas de los 90's");
 
         //para mi cancion
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 5000; i++) {
             miCancion.meGusta();
         }
         for (int i = 0; i < 200; i++) {
@@ -29,13 +29,17 @@ public class Prinicpal {
             miPodcast.reproduce();
         }
 
-        System.out.println("*****************************************************************");
-        System.out.println("Total de Reproducciones: \t"+miCancion.getTotalReproducciones());
-        System.out.println("Total de me Gusta: \t\t\t"+miCancion.getTotalDeMeGusta()+"\n");
+        System.out.println("************************DATOS DE CANCION*************************");
+        System.out.println("Cancion: "+miCancion.getTitulo());
+        System.out.println("Artista: "+miCancion.getCantante());
+
+        System.out.println("\nReproducciones: \t"+miCancion.getTotalReproducciones());
+        System.out.println("Me Gusta: \t\t\t"+miCancion.getTotalDeMeGusta());
 
         Favoritos favoritos = new Favoritos();
         favoritos.adicione(miCancion);
-        favoritos.adicione(miPodcast);
+        //favoritos.adicione(miPodcast);
+        System.out.println("*****************************************************************");
 
     }
 }
