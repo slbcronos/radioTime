@@ -11,7 +11,7 @@ public class Prinicpal {
         miCancion.setCantante("Metallica");
 
         Podcast miPodcast = new Podcast();
-        miPodcast.setPresentador("Salvador");
+        miPodcast.setPresentador("Salvador Lopez Baltazar");
         miPodcast.setTitulo("Las mejores rolas de los 90's");
 
         //para mi cancion
